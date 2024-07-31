@@ -47,7 +47,7 @@ export class GifsService {
 
   private loadLocalStorage ():void {
     if (!localStorage.getItem('history')) return;
-
+    console.log('servicio....')
     this._tagshistory = JSON.parse(localStorage.getItem('history')!);
     console.log(this._tagshistory[0]);
     this.searchtag(this._tagshistory[0]);
